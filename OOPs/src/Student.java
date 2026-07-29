@@ -4,6 +4,8 @@ public class Student {
     public int age ;
     public String name;
     public int nos;
+    private  String gf;
+
 
     // default constructor // attr.-> garbage
 
@@ -11,12 +13,13 @@ public class Student {
         System.out.println("student default ctor Called");
     }
 // parametrized ctor
-   public Student(int id,int age ,String name , int nos ){
+   public Student(int id,int age ,String name , int nos , String gf ){
     System.out.println("student parametrized ctor Called");
     this.id=id;
     this.age = age;
     this.name = name;
     this.nos = nos;
+    this.gf = gf;
 }
 // copy ctor
     public Student(Student srcobj ) { // A -> b
@@ -36,6 +39,9 @@ public class Student {
     }
     public void bunk(){
         System.out.println(name + " Bunking");
+    }
+    private void gfChatting(){
+        System.out.println(name + " Gf Chatting");
     }
 
 

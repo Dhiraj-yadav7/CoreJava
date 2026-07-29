@@ -17,12 +17,12 @@ public class app {
 
 
         // parametrized ctor
-        Student A= new Student(1,18,"Dhiraj",3);
+        Student A= new Student(1,18,"Dhiraj",3,"tina");
         System.out.println(A.name);
         System.out.println(A.id);
         System.out.println(A.age);
         System.out.println(A.nos);
-
+       3
         A.bunk();
         A.study();
         A.sleep();
