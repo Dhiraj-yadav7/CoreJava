@@ -22,7 +22,7 @@ public class app {
         System.out.println(A.id);
         System.out.println(A.age);
         System.out.println(A.nos);
-       3
+
         A.bunk();
         A.study();
         A.sleep();
