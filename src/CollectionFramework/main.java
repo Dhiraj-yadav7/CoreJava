@@ -3,6 +3,7 @@ package CollectionFramework;
 
 import java.util.ArrayList;
 import java.util.Collection;
+import java.util.Iterator;
 import java.util.List;
 
 public class main {
@@ -41,6 +42,12 @@ public class main {
         System.out.println(list2.size());
 
         // I want to traverse list using iterator
+
+        Iterator<Integer> iterator = list.iterator();
+        while (iterator.hasNext()){
+            System.out.println("element :" +iterator.next());
+        }
+
 
     }
 }
