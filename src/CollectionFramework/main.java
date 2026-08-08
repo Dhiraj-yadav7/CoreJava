@@ -48,6 +48,32 @@ public class main {
             System.out.println("element :" +iterator.next());
         }
 
+        // set and get
+
+         List<Integer> list3 = new ArrayList<>();
+        list3.add(11);
+        list3.add(12);
+        list3.add(14);
+        System.out.println(list3.get(0));
+        System.out.println("before set :"+ list3);
+
+        list3.set(0,100);
+        System.out.println("After set :" + list3);
+
+        // Collection<Integer> collection = new ArrayList<>();
+
+        // toArray
+        Object[] arr1 = list3.toArray();
+        for(Object obj : arr1 ){
+            System.out.println(obj);
+        }
+
+        // contains method
+
+        System.out.println(list3.contains(100));
+
+
+
 
     }
 }
