@@ -73,6 +73,19 @@ public class main {
         System.out.println(list3.contains(100));
 
 
+        HashSet<Integer> numbers = new HashSet<>();
+
+        numbers.add(10);
+        numbers.add(20);
+        numbers.add(10);
+        numbers.add(30);
+        numbers.add(20);
+
+        System.out.println(numbers);
+    }
+}
+
+
 
 
     }
