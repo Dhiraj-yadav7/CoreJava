@@ -85,6 +85,19 @@ public class main {
     }
 }
 
+PriorityQueue<Integer> pq = new PriorityQueue<>();
+
+        pq.add(50);
+        pq.add(10);
+        pq.add(30);
+        pq.add(20);
+
+        System.out.println(pq);
+
+        System.out.println("Smallest: " + pq.poll());
+        System.out.println("Next Smallest: " + pq.poll());
+        }
+        }
 
 
 
