@@ -117,7 +117,31 @@ public class Main {
         System.out.println("After pop: " + stack);
     }
 }
+public class Main {
+    public static void main(String[] args) {
 
+        HashMap<String, Integer> marks = new HashMap<>();
+
+        marks.put("Dhiraj", 85);
+        marks.put("Rahul", 90);
+        marks.put("Aman", 78);
+
+        System.out.println(marks);
+
+        // Get marks
+        System.out.println("Dhiraj Marks: " + marks.get("Dhiraj"));
+
+        // Check key
+        if (marks.containsKey("Rahul")) {
+            System.out.println("Rahul is present");
+        }
+
+        // Remove
+        marks.remove("Aman");
+
+        System.out.println(marks);
+    }
+}
 
 
     }
