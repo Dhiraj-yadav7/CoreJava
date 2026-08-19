@@ -1,21 +1,18 @@
 package CollectionFramework;
 
 
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.Iterator;
-import java.util.List;
+import java.util.*;
 
 public class main {
     public static void main(String[] args) {
 
 
-       ArrayList<Integer> arr =  new ArrayList<>();
-       List<Integer> list = new ArrayList<>();
+        ArrayList<Integer> arr = new ArrayList<>();
+        List<Integer> list = new ArrayList<>();
         Collection<Integer> collection = new ArrayList<>();
 
         //add
-         list.add(10);
+        list.add(10);
         list.add(20);
         list.add(30);
         System.out.println(list);
@@ -44,105 +41,40 @@ public class main {
         // I want to traverse list using iterator
 
         Iterator<Integer> iterator = list.iterator();
-        while (iterator.hasNext()){
-            System.out.println("element :" +iterator.next());
+        while (iterator.hasNext()) {
+            System.out.println("element :" + iterator.next());
         }
 
         // set and get
 
-         List<Integer> list3 = new ArrayList<>();
+        List<Integer> list3 = new ArrayList<>();
         list3.add(11);
         list3.add(12);
         list3.add(14);
-        System.out.println(list3.get(0));
-        System.out.println("before set :"+ list3);
+        System.out.println(list3.get(2));
+        System.out.println("before set :" + list3);
 
-        list3.set(0,100);
+        list3.set(0, 100);
         System.out.println("After set :" + list3);
 
-        // Collection<Integer> collection = new ArrayList<>();
-
         // toArray
-        Object[] arr1 = list3.toArray();
-        for(Object obj : arr1 ){
-            System.out.println(obj);
-        }
-
-        // contains method
+         Object[] array = list3.toArray();
+         for(Object obj: array){
+             System.out.println(obj);
+         }
+         // contains
 
         System.out.println(list3.contains(100));
 
 
-        HashSet<Integer> numbers = new HashSet<>();
+         list.add(12);
+         list.add(6);
+        System.out.println("printing the entire list " + list);
 
-        numbers.add(10);
-        numbers.add(20);
-        numbers.add(10);
-        numbers.add(30);
-        numbers.add(20);
+        // sort an arrayList
 
-        System.out.println(numbers);
+        Collections.sort(list);
+        System.out.println("printing the entire list " + list);
     }
 }
 
-PriorityQueue<Integer> pq = new PriorityQueue<>();
-
-        pq.add(50);
-        pq.add(10);
-        pq.add(30);
-        pq.add(20);
-
-        System.out.println(pq);
-
-        System.out.println("Smallest: " + pq.poll());
-        System.out.println("Next Smallest: " + pq.poll());
-        }
-        }
-
-public class Main {
-    public static void main(String[] args) {
-
-        Deque<Integer> stack = new ArrayDeque<>();
-
-        stack.push(10);
-        stack.push(20);
-        stack.push(30);
-
-        System.out.println(stack);
-
-        System.out.println("Top: " + stack.peek());
-
-        System.out.println("Removed: " + stack.pop());
-
-        System.out.println("After pop: " + stack);
-    }
-}
-public class Main {
-    public static void main(String[] args) {
-
-        HashMap<String, Integer> marks = new HashMap<>();
-
-        marks.put("Dhiraj", 85);
-        marks.put("Rahul", 90);
-        marks.put("Aman", 78);
-
-        System.out.println(marks);
-
-        // Get marks
-        System.out.println("Dhiraj Marks: " + marks.get("Dhiraj"));
-
-        // Check key
-        if (marks.containsKey("Rahul")) {
-            System.out.println("Rahul is present");
-        }
-
-        // Remove
-        marks.remove("Aman");
-
-        System.out.println(marks);
-    }
-}
-
-
-    }
-}
