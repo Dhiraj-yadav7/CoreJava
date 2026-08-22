@@ -75,6 +75,25 @@ public class main {
 
         Collections.sort(list);
         System.out.println("printing the entire list " + list);
+
+        // cloning
+
+        ArrayList<Integer> newList = new ArrayList<>(list);
+        System.out.println(newList);
+
+        //set the capacity
+        ArrayList<Integer> marks = new ArrayList<>();
+        marks.ensureCapacity( 100);
+
+        // check the list is empty or not
+
+        System.out.println(newList.isEmpty());
+
+        // check the index of list
+
+        System.out.println(newList.indexOf(40));
+
+
     }
 }
 
