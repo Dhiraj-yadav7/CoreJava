@@ -100,6 +100,40 @@ public class linkedlist {
             list.remove(3);
             System.out.println("Printing original list" + list);
 
+            LinkedList<Integer> ll = new LinkedList<>();
+            ll.add(10);
+            System.out.println(ll);
+
+
+
+            ll.addFirst(1);
+            System.out.println(ll);
+
+
+
+            ll.addLast(100);
+            System.out.println(ll);
+
+            System.out.println(ll.getFirst());
+
+
+            System.out.println(ll.getLast());
+
+
+//            ll.removeFirst();
+//            System.out.println(ll);
+
+
+//            ll.removeLast();
+//            System.out.println(ll);
+
+
+
+
+
+
+
+
 
 
 
