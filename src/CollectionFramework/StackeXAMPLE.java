@@ -153,7 +153,7 @@ st.push(10);
 
         System.out.println("peek value"  +st.peek());
         System.out.println(st.search(12));
-        System.out.println(st.empty()f);
+        System.out.println(st.empty());
 
 
 
